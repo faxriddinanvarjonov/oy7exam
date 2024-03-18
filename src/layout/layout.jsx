@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cart from "../assets/svg/Cart.svg";
 import LogoWhite from "../assets/svg/LogoWhite.svg";
@@ -16,6 +16,8 @@ import "./layout.css";
 
 const Layout = ({ children, el }) => {
   let Checkouts = useSelector((state) => state.checkouts);
+
+  let [num, setNum] = useState(1);
   let dispatch = useDispatch();
   function handleRemove() {
     dispatch({ type: "REMOVE", checkouts: [] });
@@ -23,12 +25,14 @@ const Layout = ({ children, el }) => {
   console.log(Checkouts.checkouts);
   let USDollar = new Intl.NumberFormat("en-US", {});
 
+  num <= 0 && setNum(1);
+
   let total = 0;
 
   return (
     <>
       <div className="bg-black mb-40">
-        <header className="flex flex-col items-center bg-black ml-auto mr-auto max-w-[1110px] w-full xl:px-0">
+        <header className="flex flex-col items-center bg-black ml-auto mr-auto max-w-[1110px]  w-full xl:px-0">
           <div className="flex justify-between w-full py-[36px] items-center px-6 sm:px-10 xl:px-0">
             <div className="flex gap-16">
               <button className="lg:hidden">
@@ -173,23 +177,50 @@ const Layout = ({ children, el }) => {
                               </h3>
                               <p>${USDollar.format(el.price)}</p>
                             </div>
+                            <div className="w-[96px] bg-[#F1F1F1] h-[32px] flex items-center justify-around text-[13px] font-bold ml-auto">
+                              <div
+                                onClick={() => {
+                                  setNum(num - 1);
+                                }}
+                                className="hover:text-[#D87D4A] duration-300 cursor-pointer"
+                              >
+                                -
+                              </div>
+                              <p>{num}</p>
+                              <div
+                                onClick={() => {
+                                  setNum(num + 1);
+                                }}
+                                className="hover:text-[#D87D4A] duration-300 cursor-pointer"
+                              >
+                                +
+                              </div>
+                            </div>
                           </div>
                         );
                       })
                     : ""}
                 </div>
-                <div className="flex justify-between mt-[32px] items-center">
-                  <p>TOTAL</p>
-                  <p className="text-black text-[18px] font-bold">
-                    ${USDollar.format(total)}
-                  </p>
-                </div>
-                <Link
-                  className="flex w-full btn border-none bg-[#D87D4A] rounded-none mt-[18px] text-white hover:bg-[#FBAF85]"
-                  to="/checkout"
-                >
-                  checkout
-                </Link>
+                {Checkouts.checkouts.length ? (
+                  <>
+                    <div className="flex justify-between mt-[32px] items-center">
+                      <p>TOTAL</p>
+                      <p className="text-black text-[18px] font-bold">
+                        ${USDollar.format(total)}
+                      </p>
+                    </div>
+                    <Link
+                      className="flex w-full btn border-none bg-[#D87D4A] rounded-none mt-[18px] text-white hover:bg-[#FBAF85] uppercase"
+                      to="/checkout"
+                    >
+                      checkout
+                    </Link>
+                  </>
+                ) : (
+                  <h1 className="text-red-500 text-center uppercase font-extrabold text-[25px]">
+                    no carts
+                  </h1>
+                )}
               </div>
             </div>
           </div>

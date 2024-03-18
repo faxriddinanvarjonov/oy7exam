@@ -134,10 +134,7 @@ function products() {
                         +
                       </div>
                     </div>
-                    <button
-                      className="btn rounded-none bg-[#D87D4A] hover:bg-[#FBAF85] cursor-pointer border-none w-40 font-bold text-[13px] text-white uppercase tracking-[1px] duration-300"
-                      to="/products"
-                    >
+                    <button className="btn rounded-none bg-[#D87D4A] hover:bg-[#FBAF85] cursor-pointer border-none w-40 font-bold text-[13px] text-white uppercase tracking-[1px] duration-300">
                       ADD TO CART
                     </button>
                   </form>

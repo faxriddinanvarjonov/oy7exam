@@ -24,5 +24,8 @@
   .ArrowBtnText:hover {
     color: #d87d4a;
   }
+}
 
+html {
+  height: 100vh;
 }

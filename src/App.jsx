@@ -18,6 +18,10 @@ function App() {
   let location = useLocation();
   console.log(location.pathname);
 
+  location.pathname == "/checkout"
+    ? document.querySelector("html").setAttribute("class", "bg-[#f1f1f1]")
+    : document.querySelector("html").removeAttribute("class");
+
   useEffect(() => {
     if (
       (token == null && location.pathname != "/register") ||
@@ -90,7 +94,7 @@ function App() {
           </ProtectedRoute>
         }
       ></Route>
-        <Route
+      <Route
         path="/checkout"
         element={
           <ProtectedRoute isAuth={token != null ? true : false}>
