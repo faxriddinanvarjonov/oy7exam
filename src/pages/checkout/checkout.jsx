@@ -49,6 +49,7 @@ function checkout() {
                   placeholder="Alexei Ward"
                   className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                   type="text"
+                  required
                 />
               </div>
               <div className=" flex flex-col w-full">
@@ -60,6 +61,7 @@ function checkout() {
                   placeholder="alexeiward@mail.com"
                   className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                   type="text"
+                  required
                 />
               </div>
             </div>
@@ -72,6 +74,7 @@ function checkout() {
                 placeholder="+1 202-555-0136"
                 className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                 type="text"
+                required
               />
             </div>
           </form>
@@ -88,6 +91,7 @@ function checkout() {
               placeholder="1137 Williams Avenue"
               className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
               type="text"
+              required
             />
           </div>
           <div className="flex items-end gap-[16px] w-full flex-col lg:flex-row">
@@ -109,6 +113,7 @@ function checkout() {
                 placeholder="New York"
                 className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                 type="text"
+                required
               />
             </div>
           </div>
@@ -119,9 +124,10 @@ function checkout() {
               placeholder="United States"
               className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
               type="text"
+              required
             />
           </div>
-          <div className="mt-[61px] flex justify-between flex-col">
+          <div className="mt-[61px] flex justify-between flex-col lg:flex-row ">
             <div>
               <p className="uppercase text-[#D87D4A] font-bold text-sm tracking-[1px] mb-[16px]">
                 payment details
@@ -141,6 +147,7 @@ function checkout() {
                   className="radio radio-error"
                   defaultChecked
                   id="radiobtn1"
+                  required
                 />
                 <p className="font-bold text-black text-sm">e-Money</p>
               </label>
@@ -153,6 +160,7 @@ function checkout() {
                   name="radio-4"
                   className="radio radio-error"
                   id="radiobtn2"
+                  required
                 />
                 <p className="font-bold text-black text-sm">Cash on Delivery</p>
               </label>
@@ -169,6 +177,7 @@ function checkout() {
                 placeholder="238521993"
                 className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                 type="text"
+                required
               />
             </div>
             <div className=" flex flex-col w-full">
@@ -180,6 +189,7 @@ function checkout() {
                 placeholder="6891"
                 className="mt-[9px] input w-full focus:border-[#D87D4A] border border-[#CFCFCF]"
                 type="text"
+                required
               />
             </div>
           </div>
