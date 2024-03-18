@@ -7,7 +7,7 @@ function checkout() {
   }
   return (
     <Layout>
-      <div className="max-w-[1110px] w-[93%] lg:w-full mx-auto gap-[30px] mb-[160px] flex">
+      <div className="max-w-[1110px] w-[93%] lg:w-full mx-auto gap-[30px] mb-[160px] lg:flex">
         <div className="w-full max-w-[730px] rounded-lg p-[50px] flex flex-col bg-[#f1f1f1]">
           <h1 className="text-[32px] text-black font-bold tracking-[1.15px] mb-[41px]">
             CHECKOUT
