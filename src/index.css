@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerGraph {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 1.4px;
+  }
+  .ArrowBtnText {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+  .ArrowBtnText:hover {
+    color: #d87d4a;
+  }
+
+}

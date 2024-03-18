@@ -1,0 +1,56 @@
+.Header-bg-img {
+  background-image: url("../../assets/png/headerBgImg.png");
+  background-position: calc(50% + 250px) calc(100%);
+  background-color: black;
+  background-size: 700px;
+}
+
+.bg_home_speaker {
+  background-image: url("../../assets/jpg/MainSpeakerBg.jpg");
+  background-position: center bottom -5rem;
+  background-repeat: no-repeat;
+}
+
+.bgEarphones {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/png/HomeEndBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.HeroBg {
+  background-image: url("../../assets/png/HeroBg.png");
+  background-repeat: no-repeat;
+  background-position: top -70px left -205px;
+}
+
+@media screen and (max-width: 1025px) {
+  .Header-bg-img {
+    background-position: center calc(100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/png/headerBgImg.png");
+  }
+
+  .HeroBg {
+    background-position: top -90px left -50px;
+    background-size: 1149px 766px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .bgEarphones {
+    background-size: 200%;
+  }
+  .HeroBg {
+    background-position: top -90px left -150px;
+    background-size: 1149px 766px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bg_home_speaker {
+    background-position: bottom -30px right -100px;
+    background-size: 529px 367px;
+  }
+}

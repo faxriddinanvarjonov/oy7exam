@@ -1,0 +1,89 @@
+.bg1_3 {
+  background-image: url("../../assets/png/HeroBg.png");
+  background-repeat: no-repeat;
+  background-position: top -100px left -120px;
+  background-size: 1218px 812px;
+}
+.bg2_3 {
+  background-image: url("../../assets/bgs/bg2state1.png");
+  background-repeat: no-repeat;
+}
+.bg3_3 {
+  background-image: url("../../assets/bgs/bg3state1.png");
+  background-repeat: no-repeat;
+}
+
+/*  */
+
+.bg1_2 {
+  background-image: url("../../assets/bgs/bg1state2.png");
+  background-repeat: no-repeat;
+}
+.bg2_2 {
+  background-image: url("../../assets/bgs/bg2state2.png");
+  background-repeat: no-repeat;
+}
+.bg3_2 {
+  background-image: url("../../assets/bgs/bg3state2.png");
+  background-repeat: no-repeat;
+}
+
+/*  */
+
+.bg1_1 {
+  background-image: url("../../assets/bgs/bg1state3.png");
+  background-repeat: no-repeat;
+}
+.bg2_1 {
+  background-image: url("../../assets/bgs/bg2state3.png");
+  background-repeat: no-repeat;
+}
+.bg3_1 {
+  background-image: url("../../assets/bgs/bg3state3.png");
+  background-repeat: no-repeat;
+}
+
+/*  */
+
+.bg1_4 {
+  background-image: url("../../assets/bgs/bg1state4.png");
+  background-repeat: no-repeat;
+}
+.bg2_4 {
+  background-image: url("../../assets/bgs/bg2state4.png");
+  background-repeat: no-repeat;
+}
+.bg3_4 {
+  background-image: url("../../assets/bgs/bg3state4.png");
+  background-repeat: no-repeat;
+}
+
+/*  */
+
+.bg1_5 {
+  background-image: url("../../assets/bgs/bg1state5.png");
+  background-repeat: no-repeat;
+}
+.bg2_5 {
+  background-image: url("../../assets/bgs/bg2state5.png");
+  background-repeat: no-repeat;
+}
+.bg3_5 {
+  background-image: url("../../assets/bgs/bg3state5.png");
+  background-repeat: no-repeat;
+}
+
+/*  */
+
+.bg1_0 {
+  background-image: url("../../assets/bgs/bg1state0.png");
+  background-repeat: no-repeat;
+}
+.bg2_0 {
+  background-image: url("../../assets/bgs/bg2state0.png");
+  background-repeat: no-repeat;
+}
+.bg3_0 {
+  background-image: url("../../assets/bgs/bg3state0.png");
+  background-repeat: no-repeat;
+}
